@@ -1,0 +1,9 @@
+Assignment-3
+
+1)Does ANSI recognize the data type DATE?
+ANS- yes The default string literal format, which is used for down-level clients complies with the SQL standard form that is defined as YYYY-MM-DD.
+
+2) Which subdivision of SQL is used to insert values in tables?
+ANS-DML => Data manupulation language is a sub division of SQL used to insert values in tables. By using insert command we can put values in tables.
+Syntax:: insert into table_name
+         values( ); 
