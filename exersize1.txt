@@ -1,0 +1,101 @@
+CREATE TABLE SDEPT(
+DEPTNO CHAR(2),
+DEPTNAME CHAR(15)
+);
+
+
+INSERT INTO SDEPT VALUES('10','DEVELOPEMENT');
+
+INSERT INTO SDEPT VALUES('20','TRAINING');
+
+
+
+
+INSERT INTO SEMP (EMPNO , EMPNAME,BASIC , DEPTNO)  VALUES ('0001','SUNIL', 6000,'10') ;
+
+INSERT INTO SEMP (EMPNO , EMPNAME,BASIC , DEPTNO) VALUES ('0002','HIREN', 8000,'20') ;
+INSERT INTO SEMP(EMPNO , EMPNAME,BASIC , DEPTNO , DEPTHEAD)  VALUES ('0003','ALI', 4000,'10','0001') ;
+INSERT INTO SEMP(EMPNO , EMPNAME,BASIC , DEPTHEAD)  VALUES ('0001','GEORGE', 6000,'0002');
+ 	
+==========================================================
+
+
+create table SUPPLIER(
+`S#` char(4),
+Sname varchar(25),
+Status int,
+City char(15)
+);
+
+
+insert into SUPPLIER values ('S1','ABC',10,'London'),('S2','XYZ',20,'Paris'),
+        ('S3','arun',30,'Athens'),('S4','Jolly',40,'Boston'),
+        ('S5','logon',60,'Sydeny'),('S6','jacker',50,'New York');
+
+
+create tablePARTS(
+`P#` char(4),
+Pname varchar(25),
+Color varchar(25),
+Weight float(3,2),
+City char(15)
+);
+
+insert into PARTS values ('P1','part a','blue',56.9,'London'),('P2','part b','green',67.4,'Paris'),
+        ('P3','part c','red',34.00,'Athens'),('P4','part d','yellow',78.98,'Boston'),
+        ('P5','part e ','green',34.65,'Sydeny'),('P6','part f','black',54.87,'New York');
+
+
+create table PROJECTS(`J#` char(4),Jname varchar(25),
+City char(15)
+);
+
+insert into PROJECTS()values ('J1','iNSCRIBE MESSENGER','London'),('J2','INCEPTION','Paris'),
+        ('J3','ADS','Athens'),('J4','LMS','Boston'),
+        ('J5','BANK MANAGMENT ','Sydeny'),('J6','ALS','New York');
+     
+        
+
+create table SUPPLIER_PARTS_PROJECT(
+`S#` char(4),
+`P#` char(4),
+`J#` char(4),
+Qty  float(5,2)
+);
+
+insert into SUPPLIER_PARTS_PROJECT
+values('S1','P2','J3',123.45),('S2','P4','J6',243.55),('S3','P3','J6',123.55),
+		('S4','P6','J6',523.35),('S5','P3','J5',223.65),('S6','P1','J2',235.75);
+		
+
+
+
+===============================
+DISPLAY
+===============================
+select * from s;
+
+
+select * from s;
+
+
+select 'S#', SNAME FROM S;
+
+
+SELECT PNAME , COLOR  FROM P WHERE CITY='LONDON';
+
+select 'S#', SNAME FROM S;
+
+select * from Suppliers Where City!='London';
+
+select * from Suppliers;
+
+select * from Suppliers where Status >= 20;
+
+Select Pname  from Parts where weight<=12 AND weight>=14;
+
+select * from Project where City = 'Athens';
+
+select * from Suppliers where City = 'Paris' OR City = 'Athens';
+
+15) select Weight as `Weight in grams`,Weight*1000 AS `weight in milligrams`, Weight/1000 As `Weight in killograms` from parts;

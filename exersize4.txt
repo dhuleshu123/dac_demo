@@ -1,0 +1,43 @@
+#1
+
+select min(status) from supplier;
+
+
+
+#2
+
+select  max(Weight) from tableparts;
+
+
+
+#3
+select avg(Weight) from tableparts;
+
+
+
+#4
+
+select qty from supplier_parts_project where `P#` = 'P1';
+
+
+
+#5
+
+select `P#`,sum(qty) from supplier_parts_project group by `P#`;
+
+
+
+#6
+
+select `P#`,avg(qty) from supplier_parts_project group by `P#`;
+
+
+
+#7
+
+select `P#`,max(qty) from supplier_parts_project where qty > 800 group by `P#`;
+
+
+
+#8
+select Sname,Status,count(status) from supplier group by status;

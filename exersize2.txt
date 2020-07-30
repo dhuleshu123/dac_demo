@@ -1,0 +1,36 @@
+-- 1 
+Select * from supplier ORDER BY City desc;
+
+-- 
+
+2
+Select * from parts order by City , Pname asc;
+
+-- 
+
+3 
+Select * from supplier where status   between 10 and 20 ; 
+
+--
+
+4 
+
+Select Pname, Weight from Parts where Weight not between 10 and 15;
+
+--
+
+5
+
+Select Pname from Parts where Pname like 's%';
+
+-- 
+
+6 
+
+Select * from Supplier where city like 'L%';
+
+-- 
+
+7 
+
+Select * from projects where Jname like '__n%';

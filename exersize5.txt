@@ -1,0 +1,104 @@
+#1
+
+select Sname,Qty from supplier s,supplier_parts_project s1 
+where s.`S#` = s1.`S#`; 
+
+
+
+#2
+
+select Pname , Qty from tableparts t,supplier_parts_project s1
+where
+t.`P#` = s1.`P#`;
+
+
+
+#3
+
+select Jname,qty from projects,supplier_parts_project
+where 
+projects.`J#` = supplier_parts_project.`J#`;
+
+
+#4
+
+select pname,jname,sname,qty from supplier,tableparts,projects,supplier_parts_project
+where 
+supplier.`S#` = supplier_parts_project.`S#`
+and 
+tableparts.`P#` = supplier_parts_project.`P#`
+and
+projects.`J#`  = supplier_parts_project.`J#`;
+
+
+
+#5
+
+select SUPPLIER.Sname , tableparts.City
+from SUPPLIER,tableparts,projects,SUPPLIER_PARTS_PROJECT
+where SUPPLIER.`S#` = SUPPLIER_PARTS_PROJECT.`S#`and
+	  tableparts.`P#` = SUPPLIER_PARTS_PROJECT.`P#`and 
+      projects.`J#` = SUPPLIER_PARTS_PROJECT.`J#` and 
+       tableparts.City = projects.City;
+      
+
+
+#6
+
+select pname,color,qty from tableparts,supplier_parts_project where color = 'red' and 
+tableparts.`P#` = supplier_parts_project.`P#`;
+
+
+select * from supplier;
+select * from supplier_parts_project;
+select * from tableparts;
+select * from projects;
+
+
+
+#7
+
+select sname,qty,status from supplier,supplier_parts_project
+where 
+supplier.`S#` = supplier_parts_project.`S#`
+and 
+supplier.status = 20;
+
+
+
+#8
+
+select pname from tableparts,supplier_parts_project
+where 
+tableparts.`P#` = supplier_parts_project.`P#`
+and
+tableparts.Weight > 14;
+
+
+
+#9
+
+select * from projects,supplier_parts_project
+where 
+projects.`J#` = supplier_parts_project.`J#`
+and 
+supplier_parts_project.Qty > 500;
+
+
+
+#10
+
+select pname,qty from tableparts,supplier_parts_project
+where 
+tableparts.`P#` = supplier_parts_project.`P#`
+and
+supplier_parts_project.Qty < 15;
+
+
+
+
+#11
+
+select  b.ename as employee ,a.ename as manager
+from emp a , emp b 
+where b.mgr = a.empno ;

@@ -1,0 +1,18 @@
+#2
+
+create view commission
+as
+select snum,comm from salespeople
+where comm between .10 and .20;
+
+#3 
+CREATE TABLE IF NOT EXISTS `ORDERS_NEW`(
+Onum INT(4),
+Amt FLOAT(7,2),
+Odate DATE default CURRENT_TIMESTAMP,
+Cnum INT(4),
+Snum INT(4)
+);
+
+create view Entryorders as 
+select * from ORDERS_NEW;
