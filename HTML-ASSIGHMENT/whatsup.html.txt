@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>chat box</title>
+    <style>
+        html,
+        body {
+            margin: 0px;
+        }
+    </style>
+    <script src="whatsapp.js"></script>
+</head>
+
+<body>
+    <div style="height: 50vh; display: flex; background: slateblue;">
+        <div style="flex: 1; background: tomato;"></div>
+
+        <div id="comment_box"
+            style="display: flex;flex-direction: column ; overflow-y: scroll; flex: 2; background: turquoise; padding: 5px;">
+            <span id="message"
+                style="width:max-content; font-family:monospace ;font-style:inherit; border-radius: 5px;padding: 3px; margin: 2px; background: slateblue;">
+            </span>
+        </div>
+
+        <div style="flex: 1; background: seagreen;"></div>
+    </div>
+
+
+
+    <div style="display: flex;background-color: yellow;">
+        <div style="flex: 1; background: yellowgreen;"></div>
+
+        <div style="flex: 2; background: orange; display: flex; justify-content: space-between;">
+            <input type="text" id="comment" placeholder="Type here">
+            <button id="Send" onclick="chat()">=></button>
+        </div>
+
+        <div style="flex: 1; background: red;"></div>
+    </div>
+</body>
+
+</html>
