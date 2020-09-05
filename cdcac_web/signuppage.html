@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="signup1.css">
+    <title>Document</title>
+    <script src="signup.js"> </script>
+</head>
+
+<body>
+
+    <!--container-->
+    <div class="container">
+
+        <!--sign up box-->
+        <div class="mainbox">
+
+            <h2>Sign Up Here</h2>
+
+
+            <form onsubmit=" return validate()" action="message.html">
+
+
+
+                <input type="text" id="fname" placeholder="First Name.." autocomplete="off">
+                <label id="fuser" style="color:red;visibility:hidden;margin:10px;">INVALID</label>
+
+                <input type="text" id="lname" placeholder="Last Name.." autocomplete="off">
+                <label id="luser" style="color:red;visibility:hidden;margin:10px;">INVALID</label>
+
+
+                <input type="text" id="email" placeholder="Email.." autocomplete="off">
+                <label id="uemail" style="color:red;visibility:hidden;margin:10px;">INVALID</label>
+
+                <input type="text" id="user" placeholder="Username.." autocomplete="off">
+                <label id="userid" style="color:red;visibility:hidden;margin:10px;">INVALID</label>
+
+                <input type="password" id="pass" placeholder="Password.." autocomplete="off">
+                <label id="pass" style="color:red;visibility:hidden;margin:10px;">INVALID</label>
+
+                <input type="submit" id="submit" value="submit">
+
+
+
+            </form>
+
+
+
+        </div>
+
+    </div>
+
+
+</body>
+
+</html>

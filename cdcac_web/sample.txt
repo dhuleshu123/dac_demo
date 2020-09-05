@@ -1,0 +1,39 @@
+.loginbox input{
+    width:80%;
+    margin-bottom:20px;
+    margin-left:30px;
+    margin-right: 10px;
+    margin-top: 0px;
+
+}
+
+
+
+
+body{
+    margin:0;
+    padding:0;
+    background:url(https://picsum.photos/id/1/200/300);
+    background-size:cover;
+    background-position:center;
+   background-repeat: no-repeat;
+  
+  }
+1041
+1
+1081
+13
+227
+1019
+  background:rgb(16, 16, 100);
+
+
+
+
+
+
+
+
+
+
+   background:#60adde;

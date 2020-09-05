@@ -1,0 +1,11 @@
+function chat() {
+    var Message = document.getElementById('comment').value;
+    var chat = document.getElementById('comment_box').children[0];
+
+    var new_message = chat.cloneNode(true);
+    new_message.innerHTML = Message;
+
+    document.getElementById('comment').value = "";
+
+    document.getElementById('comment_box').appendChild(new_message);
+}

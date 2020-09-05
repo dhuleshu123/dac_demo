@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="day5.js"></script>
+</head>
+
+<body>
+    <div> someone has posted something</div>
+
+    <div style="margin-top: 4px; margin-bottom: 4px;">
+        <!--to add the comment here-->
+        <input class="temp" type="text" name="" id="inputId1" placeholder="comment using this" />
+    </div>
+
+
+    <div>
+        <!-- logic for like now-->
+        <button id="likeid" onclick="LikeHere()">Like 1</button>
+        <button onclick="commentHere()">COMMENT NOW</button>
+    </div>
+
+
+    <div id="commentbox">
+        <!--TO ADD COMMENT HERE-->
+
+        <!--ha ek clone banavala -->
+        <div id="shubham" style="display: flex;justify-content:space-between;visibility: hidden;">
+            <div>sample comment</div>
+            <button onclick="deletecomment(this)">DELETE</button>
+        </div>
+
+    </div>
+
+
+
+</body>
+
+</html>

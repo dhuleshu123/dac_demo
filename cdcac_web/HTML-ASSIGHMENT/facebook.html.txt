@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Facebook</title>
+    <style>
+        html,
+        body {
+            margin: 0;
+        }
+    </style>
+</head>
+
+<body>
+    <div style="display: flex; background: #29487d;">
+
+        <div style="
+            flex: 1;
+            color: white;
+            font-weight: bold;
+            font-size: 35px; 
+            font-family: inherit; 
+            padding: 21px; 
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;">
+            facebook
+        </div>
+
+
+        <div style="flex: 1;">
+            <table>
+                <tr>
+                    <td><label style=" font-size: 12px; color: white;" for="email">Email or phone</label></td>
+                    <td><label style="font-size: 12px; color: white" for="passwd">Password</label></td>
+                </tr>
+                <tr>
+                    <td><input style="font-size: 12px; width: 142px;" type="email" id="email"></td>
+                    <td><input style=" font-size: 12px" type="password" id="passwd"></td>
+                    <label for="submit">
+                        <td><input style=" padding: 2px 6px; line-height: 18px; text-align: center; font-weight: bold;
+                        font-size: 12px; color: white; background: #365899;border:1px #29487d solid;" type="submit"
+                                id="submit" value="Log In"></td>
+                    </label>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td><a style="color: #9cb4d8; font-weight: normal; font-family: inherit; font-size: 13px;"
+                            href="#">Forgotten
+                            account?</a></td>
+                </tr>
+            </table>
+        </div>
+
+
+    </div>
+
+    <div style="display: flex;  background: linear-gradient(white,#D3D8E8);">
+
+        <div style=" flex: 1;
+                color: #0e385f;
+                font-size: 20px;
+                font-weight: bold;
+                line-height: 29px;
+                margin: 40px;
+                width: 450px;
+                word-spacing: -1px;">
+            <div>Facebook helps you connect and share with the people in your life.</div>
+
+            <div style=" padding: 20px; margin-top: 10px;"><img
+                    src="https://static.xx.fbcdn.net/rsrc.php/v3/yi/r/OBaVg52wtTZ.png" alt="">
+            </div>
+
+        </div>
+
+
+        <div style="font-family: inherit;  flex: 1;">
+            <div style="
+                font-size: 36px;
+                font-weight: 600;
+                color: #333;
+                font-family: inherit;
+                padding-top: 20px;
+                padding-bottom: 20px;">
+                <span>Create an account</span>
+            </div>
+
+            <div style="font-size: 19px;
+                font-weight: normal;
+                font-family: inherit;
+                color: #1d2129;">
+                It's quick and easy.
+            </div>
+
+            <div style="display: flex;">
+                <div style="padding: 8px 10px;font-size: 18px;">
+                    <input type="text" placeholder="First name">
+                </div>
+                <div style="padding: 8px 10px;font-size: 18px;">
+                    <input type="text" placeholder="Surname">
+                </div>
+            </div>
+            <div style="padding: 8px 10px;">
+                <input type="tel" placeholder="Mobile number or email address">
+            </div>
+
+            <div style="padding: 8px 10px;font-size: 18px;">
+                <input type="password" placeholder="New password">
+            </div>
+
+            <div style="padding: 8px 10px;font-size: 16px; font-weight: bold; color: #90949c;">
+                <div><label for="birthday">Date of birth</label></div>
+                <br>
+                <div><input style="font-size: 13px;
+                                font-family: inherit;
+                              height: 30px;
+                              padding: 5px;" type="date" id="birthday" name="birthday">
+                </div>
+            </div>
+
+            <div style="padding: 8px 10px;font-size: 16px; font-weight: bold; color: #90949c;">
+                Gender
+            </div>
+            <div style="display:flex; color:#1d2129;font: size 18px;font-weight:normal;padding:0 10px 0 3px  ">
+                <input type="radio" id="male" name="gender" value="male">
+                <label for="male">Male</label><br>
+                <input type="radio" id="female" name="gender" value="female">
+                <label for="female">Female</label><br>
+                <input type="radio" id="other" name="gender" value="other">
+                <label for="other">Custom</label>
+            </div>
+
+            <div style="display: flex; color: #777;font-size: 11px;width: 316;padding: 8px 10px;">
+                <div style="flex: 1;">
+                    <p>By clicking Sign Up, you agree to our
+                        Terms, Data Policy and Cookie
+                        Policy. You may receive SMS
+                        notifications from us
+                        and can opt out at any time.</p>
+                </div>
+                <div style="flex: 1;"></div>
+            </div>
+
+            <div style="padding: 10px;">
+                <input
+                    style="background: linear-gradient(#79bc64,#578843); font-size: 19px; font-weight: bold !important; font-family: 'freight sans bold', Arial, Arial, Helvetica, sans-serif !important; margin-top: 10px; margin-bottom: 10px;text-align: center;padding: 7px 20px; border-radius: 5px;"
+                    type="submit" id="submit" value="Sign Up">
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

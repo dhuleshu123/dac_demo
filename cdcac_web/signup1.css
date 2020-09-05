@@ -1,0 +1,72 @@
+body{
+    margin:0;
+    
+  
+  }
+  .container{
+    display: flex;
+    flex-direction: column; 
+    justify-content: center;
+    align-items: center;
+    height:100vh;
+    background: url("https://picsum.photos/id/13/1400/1200");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+
+
+  }
+.mainbox{
+     width: 430px;
+        height: 550px;
+        background:rgba(16, 16, 100,0.7);
+        border-radius:25px;
+        background: url("https://picsum.photos/id/16/1400/1200");
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+    
+}
+
+h2{
+    text-align: center;
+    color:BLACK;
+     padding-top: 22px;
+}
+
+input[type=text],input[type=password]{
+    width:90%;
+    outline:none;
+    border:none;
+    font-weight:bold;
+    color:black;
+    border-bottom: 1px solid #fff;
+    margin-left: 20px;
+    margin-bottom:15px;
+    background:rgba(0,0,0,0.10);
+    box-sizing: border-box;   
+    padding:12px 5px;
+   
+}
+
+
+input[type=submit]{
+    width:80%;
+    outline:none;
+    border:none;
+    border-radius:20px;
+    color:black;
+    font-size:20px;
+    background:red;
+  
+    margin-left: 43px;
+    margin-top:30px;
+      padding:10px 0;
+ 
+   
+  }
+  input[type=submit]:hover{
+    background:#003366;
+    
+
+}
